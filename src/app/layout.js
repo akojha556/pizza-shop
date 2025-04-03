@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { Red_Hat_Display, Cedarville_Cursive, Special_Elite, Pirata_One } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
@@ -51,9 +50,6 @@ export default function RootLayout({ children }) {
       className={`${redHat.variable} ${cederville.variable} ${specialElite.variable} ${pirataOne.variable} ${gidole.variable}`}
       lang="en"
     >
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-      </Head>
       <body>{children}</body>
     </html>
   );
